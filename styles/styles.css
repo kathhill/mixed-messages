@@ -1,0 +1,29 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+}
+
+h1 {
+    letter-spacing: 4px;    
+    font-weight: 500;
+    margin-bottom: 0; 
+}
+
+p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+main {
+}
+
+section,
+header {
+    display: grid;
+    place-items: center;
+}
+
+img {
+   border: 2px solid #000;
+   padding: 3rem; 
+}
