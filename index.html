@@ -8,17 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />    
 </head>
 <body>
-    <main>
-        <header>
-            <h1>RANDOM POOH</h1>
-            <p>In which we find our friend Pooh waxing philosophical.</p>
-        </header>
-        <section>
-            <img src="images/eeyore-and-his-new-house.jpg" alt="fpo" />
-        </section>
+    <header>
+        <h1>RANDOM POOH</h1>
+        <p>In which we find our friend Winnie the Pooh waxing philosophical.</p>
+    </header>
+    <main>   
+    <section>
+        <div id="rp-container">
+            <img id="rp-img" class="fade-in" src="images/mr-sanders.jpg" alt="fpo" />        
+            <h2 id="rp-heading">Say something whimsical, Pooh.</h2>
+            <p id="rp-quote">Click the button below to generate some pooh-isms.</p>
+        </div>
+
+        <button id="rp-button">Generate more Pooh</button>
+    </section>
     </main>
+    <footer>
+        <div class="container">
+            <p>Sources for quotes and images courtesy of:</p>
+            <ol>
+                <li>
+                    <p>A.A. Milne, with decorations by Ernest H. Shepard <cite>Winnie-the-Pooh</cite>, 1926 E.P. Dutton and Company</p>
+                </li>
+                <li><p>A.A. Milne, with decorations by Ernest H. Shepard <cite>The House At Pooh Corner</cite>, 1928 E.P. Dutton and Company</p>
+                </li>
+            </ol>
+        </div>
+    </footer>
+    <script src="scripts/random-pooh.js"></script>
 </body>
 </html>
