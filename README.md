@@ -12,5 +12,5 @@ Generates random quotes and images from Winnie the Pooh and House at Pooh Corner
 
 - Clone repo
 - Open index.html in browser
-- Click Generate Random Pooh button
+- Click Generate Random more Pooh button
 - Experience happiness for a moment
