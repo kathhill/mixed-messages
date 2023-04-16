@@ -20,3 +20,7 @@ Generates random quotes, facts, and images from Winnie the Pooh and House at Poo
 - Open index.html in browser
 - Click Generate Random more Pooh button
 - Experience happiness for a moment
+
+### Launch the Code (See it in action)
+
+- Navigate to [Mixed Messages Project](https://kathhill.github.io/mixed-messages)
