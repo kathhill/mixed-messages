@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/styles.css" />    
+    <link rel="stylesheet" href="styles/styles.css" /> 
+    <script src="scripts/random-pooh.js" defer></script>   
 </head>
 <body>
     <header>
@@ -19,15 +20,16 @@
     <section>
 
         <div id="rp-container">
-            <img id="rp-img" class="fade-in" src="images/mr-sanders.jpg" alt="fpo" />  
+            <img id="rp-img" src="images/mr-sanders.jpg" alt="fpo" />  
             <h2 id="rp-heading">Say something whimsical, Pooh.</h2>      
-            <p id="rp-quotes">Initial quote on load.</p>
-            <p id="rp-facts">Fun fact: initial fact on load.</p>
-
-            <p >Click the button below to generate more pooh-isms and pooh-facts.</p>
+            <p id="rp-quotes">"The only reason for making honey is so as <em>I</em> can eat it.</p>
+            <h3>Fun Fact:</h3>
+            <p id="rp-facts">Pooh is a bear of very little brain. Just ask him.</p>            
         </div>
-
-        <button id="rp-button">Generate more Pooh</button>
+        <div class="cta">
+            <p >Click the button below to generate more pooh-isms and pooh-facts.</p>
+            <button id="rp-button">Generate more Pooh</button>
+        </div>        
     </section>
     </main>
     <footer>
@@ -39,10 +41,9 @@
                 </li>
                 <li><p>A.A. Milne, with decorations by Ernest H. Shepard <cite>The House At Pooh Corner</cite>, 1928 E.P. Dutton and Company</p>
                 </li>
-                <li>Author name. "Title." <cite>website name, url.</cite> Accessed 13 April 2023.</li>
+                <li>Nigel Blundell and Emily Hill. "Happy 90th birthday, Winnie the Pooh: The bear of very little brain (but VERY big bank balance)." <cite> Daily Mail, https://www.dailymail.co.uk/news/article-2002613/Winnie-Pooh-The-bear-little-brain-VERY-big-bank-balance.html.</cite> 11 June 2011. Accessed 13 April 2023.</li>
             </ol>
         </div>
-    </footer>
-    <script src="scripts/random-pooh.js"></script>
+    </footer>    
 </body>
 </html>

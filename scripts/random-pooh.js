@@ -6,44 +6,39 @@ const generateRandomNum = (num) => {
 // variable data
 const poohData = {
     poohImages: [
-        'eeyore-and-his-new-house.jpg',
-        'fpo.jpg',
+        'balloon.jpg',
+        'boots.jpg',
+        'mr-sanders.jpg',        
+        'bridge-sticks.jpg',
+        'cr-and-green-door.jpg',
         'mr-sanders.jpg',
-        'pooh-and-christopher-robin.jpg',
-        'eeyore-and-his-new-house.jpg',
-        'fpo.jpg',
-        'mr-sanders.jpg',
-        'pooh-and-christopher-robin.jpg',
-        'eeyore-and-his-new-house.jpg',
-        'fpo.jpg',
-        'mr-sanders.jpg',
-        'pooh-and-christopher-robin.jpg'
+        'pooh-and-tree.jpg',
+        'honey.jpg',
+        'picnic.jpg',
+        'pooh-and-piglet.jpg',
+        'pooh-and-tree.jpg',
+        'pooh-piglet-snow.jpg'
     ],
     poohFacts: [
-        'Winnie the Pooh is a friendly and kind animal.',
-        'A Bear of very Little Brain.',
-        'fact-three',
-        'fact-four',
-        'fact-five',
-        'facting-six',
-        'fact-seven',
-        'fact-eight',
-        'fact-nine',
-        'facting-ten'
+        'Pooh was inspired by an 18" high Alpha Farnell teddy bear bought from Harrods in London for Christopher Robin on his first birthday.<sup> 3</sup>',
+        'Pooh is a "Bear of very Little Brain."<sup> 3</sup>',
+        'First called Mr. Edward Bear, he was renamed after a real bear called Winnie at the London Zoo.<sup> 3</sup>',
+        'One story suggests that \'Pooh\' was added because the original Winnie smelled very bad.<sup> 3</sup>',
+        'Winnie was short for \'Winnipeg.\' The zoo bear had been the mascot for the Winnipeg regiment of the Canadian Army in World War 1.<sup> 3</sup>',
+        'Winnie of the London Zoo was a female.<sup> 3</sup>',
+        'Winnie-the-Pooh has been translated into 46 languages, including Latin.<sup> 3</sup>',
+        'The Latin translation, <em>Winnie ille Pu</em>, is the only Latin book ever to have been featured on the NY Times Best Seller List.<sup> 3</sup>',
+        'The 100 Acre Wood is based on Ashdown Forest in Sussex, which was near the Milne family\'s country home, Cotchford Farm.<sup> 3</sup>',
+        'Pooh is patron saint of teddy bears.<sup> 3</sup>'
     ],
     poohQuotes: [
-        'People say nothing is impossible, but I do nothing every day.',
-        'A hug is always the right size.',
-        'If you live to be 100, I want to live to be 100 minus one day so I never have to live without you.',
-        'What\s for breakfast?',
-        'For I am a bear of very little brain, and long words bother me.',
-        'My spelling is wobbly. It\'s good spelling but it Wobbles, and the letters get in the wrong places.',
-        'People say nothing is impossible, but I do nothing every day.',
-        'A hug is always the right size.',
-        'If you live to be 100, I want to live to be 100 minus one day so I never have to live without you.',
-        'What\s for breakfast?',
-        'For I am a bear of very little brain, and long words bother me.',
-        'My spelling is wobbly. It\'s good spelling but it Wobbles, and the letters get in the wrong places.'
+        '"People say nothing is impossible, but I do nothing every day."<sup> 1</sup>',
+        '"A hug is always the right size."<sup> 1</sup>',
+        '"If you live to be 100, I want to live to be 100 minus one day so I never have to live without you.<sup>1</sup>',
+        '"When you wake up in the morning, Pooh," said Piglet at last, "What\'s the first thing you say to yourself?" "What\'s for breakfast?" said Pooh. "What do you say, Piglet?" "I say, I wonder what\'s going to happen exciting today?" said Piglet. Pooh nodded thoughtfully. "It\'s the same thing," he said.”<sup> 1</sup>',
+        '"For I am a bear of very little brain, and long words bother me."<sup> 1</sup>',
+        '"My spelling is wobbly. It\'s good spelling but it Wobbles, and the letters get in the wrong places."<sup> 1</sup>',
+        '"You\'re just in time for a little smackeral of something..."<sup> 2</sup>'        
     ]
 }
 
@@ -53,15 +48,16 @@ const randomizePooh = (e) => {
     let randomFact = poohData.poohFacts[generateRandomNum(poohData.poohFacts.length)];
     let randomQuote = poohData.poohQuotes[generateRandomNum(poohData.poohQuotes.length)];
 
-    let poohContent = `<img src="images/${randomImage}" alt="random image from Winnie the Pooh" /><h2 id="rp-heading">Say something whimsical, Pooh.</h2><p>"${randomQuote}"</p><p>Fun Fact: ${randomFact}</p><p >Click the button below to generate more pooh-isms and pooh-facts.</p>`;
+    let poohContent = `<img src="images/${randomImage}" alt="random image from Winnie the Pooh" /><h2 id="rp-heading">Say something whimsical, Pooh.</h2><p>${randomQuote}</p><h3>Fun Fact:</h3><p>${randomFact}</p>`;
     document.getElementById('rp-container').innerHTML = poohContent;
-    e.preventDefault();
+    
 }
 
 // handle click event
 const button = document.getElementById('rp-button');
 
-button.addEventListener('click', (randomizePooh));
+button.addEventListener('click', randomizePooh);
+button.onclick = randomizePooh;
 
 
 
