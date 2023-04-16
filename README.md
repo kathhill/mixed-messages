@@ -24,3 +24,7 @@ Generates random quotes, facts, and images from Winnie the Pooh and House at Poo
 ### Launch the Code (See it in action)
 
 - Navigate to [Mixed Messages Project](https://kathhill.github.io/mixed-messages)
+
+### TODO
+
+- Get rid of image jump/flash on button click
