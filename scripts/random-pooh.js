@@ -57,11 +57,3 @@ const randomizePooh = (e) => {
 const button = document.getElementById('rp-button');
 
 button.addEventListener('click', randomizePooh);
-button.onclick = randomizePooh;
-
-
-
-
-
-
-
